@@ -1,13 +1,3 @@
-// *********************
-// Role of the component: Footer component
-// Name of the component: Footer.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <Footer />
-// Input parameters: no input parameters
-// Output: Footer component
-// *********************
-
 "use client";
 
 import { navigation } from "@/lib/utils";
@@ -17,6 +7,7 @@ import { useLanguage } from "@/app/i18n/LanguageContext";
 
 const Footer = () => {
   const { t } = useLanguage();
+  
   return (
     <footer className="bg-white" aria-labelledby="footer-heading">
       <div>
@@ -27,7 +18,7 @@ const Footer = () => {
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <Image
               src="/logo v1.png"
-              alt="Singitronic logo"
+              alt="Clean Water Services logo"
               width={250}
               height={250}
               className="h-auto w-auto"
@@ -40,12 +31,12 @@ const Footer = () => {
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.sale.map((item) => (
-                      <li key={item.name}>
+                      <li key={item.key}>
                         <a
                           href={item.href}
                           className="text-sm leading-6 text-black hover:text-gray-700"
                         >
-                          {item.name}
+                          {t(`footer.sale_items.${item.key}`)}
                         </a>
                       </li>
                     ))}
@@ -57,12 +48,12 @@ const Footer = () => {
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.about.map((item) => (
-                      <li key={item.name}>
+                      <li key={item.key}>
                         <a
                           href={item.href}
                           className="text-sm leading-6 text-black hover:text-gray-700"
                         >
-                          {item.name}
+                          {t(`footer.about_items.${item.key}`)}
                         </a>
                       </li>
                     ))}
@@ -76,12 +67,12 @@ const Footer = () => {
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.buy.map((item) => (
-                      <li key={item.name}>
+                      <li key={item.key || item.name}>
                         <a
                           href={item.href}
                           className="text-sm leading-6 text-black hover:text-gray-700"
                         >
-                          {item.name}
+                          {item.key ? t(`footer.buy_items.${item.key}`) : item.name}
                         </a>
                       </li>
                     ))}
@@ -93,12 +84,12 @@ const Footer = () => {
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.help.map((item) => (
-                      <li key={item.name}>
+                      <li key={item.key || item.name}>
                         <a
                           href={item.href}
                           className="text-sm leading-6 text-black hover:text-gray-700"
                         >
-                          {item.name}
+                          {item.key ? t(`footer.help_items.${item.key}`) : item.name}
                         </a>
                       </li>
                     ))}

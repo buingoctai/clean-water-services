@@ -1,0 +1,55 @@
+{
+  "navigation": {
+    "home": "Trang chủ",
+    "shop": "Cửa hàng",
+    "cart": "Giỏ hàng",
+    "wishlist": "Yêu thích",
+    "checkout": "Thanh toán",
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "dashboard": "Bảng điều khiển",
+    "profile": "Hồ sơ",
+    "logout": "Đăng xuất"
+  },
+  "common": {
+    "search": "Tìm kiếm",
+    "languageSwitcher": "Ngôn ngữ",
+    "english": "Tiếng Anh",
+    "vietnamese": "Tiếng Việt",
+    "contactUs": "Liên hệ",
+    "phone": "+381 61 123 321",
+    "email": "nuocsach.dichvu@gmail.com"
+  },
+  "admin": {
+    "categories": "Danh mục",
+    "products": "Sản phẩm",
+    "orders": "Đơn hàng",
+    "users": "Người dùng"
+  },
+  "footer": {
+    "sale": "Khuyến mãi",
+    "aboutUs": "Về chúng tôi",
+    "buying": "Mua hàng",
+    "support": "Hỗ trợ",
+    "sale_items": {
+      "discounts": "Giảm giá",
+      "news": "Tin tức",
+      "registerDiscounts": "Đăng ký nhận ưu đãi"
+    },
+    "about_items": {
+      "aboutSingitronic": "Về Dịch vụ nước sạch",
+      "workWithUs": "Làm việc cùng chúng tôi",
+      "companyProfile": "Hồ sơ công ty"
+    },
+    "buy_items": {
+      "loyaltyCard": "Thẻ thành viên",
+      "termsOfUse": "Điều khoản sử dụng",
+      "privacyPolicy": "Chính sách bảo mật"
+    },
+    "help_items": {
+      "helpCenter": "Trung tâm trợ giúp",
+      "contactUs": "Liên hệ",
+      "howToBuy": "Hướng dẫn mua hàng"
+    }
+  }
+}

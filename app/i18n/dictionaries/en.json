@@ -1,0 +1,55 @@
+{
+  "navigation": {
+    "home": "Home",
+    "shop": "Shop",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "checkout": "Checkout",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "common": {
+    "search": "Search",
+    "languageSwitcher": "Language",
+    "english": "English",
+    "vietnamese": "Vietnamese",
+    "contactUs": "Contact Us",
+    "phone": "+381 61 123 321",
+    "email": "nuocsach.dichvu@gmail.com"
+  },
+  "admin": {
+    "categories": "Categories",
+    "products": "Products",
+    "orders": "Orders",
+    "users": "Users"
+  },
+  "footer": {
+    "sale": "Sale",
+    "aboutUs": "About Us",
+    "buying": "Buying",
+    "support": "Support",
+    "sale_items": {
+      "discounts": "Discounts",
+      "news": "News",
+      "registerDiscounts": "Register Discounts"
+    },
+    "about_items": {
+      "aboutSingitronic": "About Clean Water Services",
+      "workWithUs": "Work With Us",
+      "companyProfile": "Company Profile"
+    },
+    "buy_items": {
+      "loyaltyCard": "Loyalty Card",
+      "termsOfUse": "Terms Of Use",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "help_items": {
+      "helpCenter": "Help Center",
+      "contactUs": "Contact Us",
+      "howToBuy": "How To Buy"
+    }
+  }
+}

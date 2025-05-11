@@ -84,26 +84,27 @@ export const incentives = [
 
 export const navigation = {
   sale: [
-    { name: "Discounts", href: "#" },
-    { name: "News", href: "#" },
-    { name: "Register Discounts", href: "#" },
+    { name: "Discounts", key: "discounts", href: "#" },
+    { name: "News", key: "news", href: "#" },
+    { name: "Register Discounts", key: "registerDiscounts", href: "#" },
   ],
   about: [
-    { name: "About Singitronic", href: "#" },
-    { name: "Work With Us", href: "#" },
-    { name: "Company Profile", href: "#" },
+    { name: "About Clean Water Services", key: "aboutSingitronic", href: "#" },
+    { name: "Work With Us", key: "workWithUs", href: "#" },
+    { name: "Company Profile", key: "companyProfile", href: "#" },
   ],
   buy: [
-    { name: "Singitronic Loyalty Card", href: "#" },
-    { name: "Terms Of Use", href: "#" },
-    { name: "Privacy Policy", href: "#" },
-    { name: "Complaints", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "Loyalty Card", key: "loyaltyCard", href: "#" },
+    { name: "Terms Of Use", key: "termsOfUse", href: "#" },
+    { name: "Privacy Policy", key: "privacyPolicy", href: "#" },
+    { name: "Complaints", key: "complaints", href: "#" },
+    { name: "Partners", key: "partners", href: "#" },
   ],
   help: [
-    { name: "Contact", href: "#" },
-    { name: "How to Buy at Singitronic", href: "#" },
-    { name: "FAQ", href: "#" },
+    { name: "Help Center", key: "helpCenter", href: "#" },
+    { name: "Contact Us", key: "contactUs", href: "#" },
+    { name: "How To Buy", key: "howToBuy", href: "#" },
+    { name: "FAQ", key: "faq", href: "#" },
   ],
 };
 

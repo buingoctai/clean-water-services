@@ -19,6 +19,7 @@ export { default as Pagination } from "./Pagination";
 export { default as QuantityInput } from "./QuantityInput";
 export { default as UrgencyText } from "./UrgencyText";
 export { default as StockAvailabillity } from "./StockAvailabillity";
+export { default as LanguageSwitcher } from "./LanguageSwitcher";
 export { default as ColorInput } from "./ColorInput";
 export { default as SingleProductRating } from "./SingleProductRating";
 export { default as ProductTabs } from "./ProductTabs";

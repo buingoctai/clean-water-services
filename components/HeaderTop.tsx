@@ -17,13 +17,17 @@ import { FaHeadphones } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaRegUser } from "react-icons/fa6";
+import { FaLanguage } from "react-icons/fa";
+import { useLanguage } from "@/app/i18n/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const HeaderTop = () => {
   const { data: session }: any = useSession();
+  const { t } = useLanguage();
 
   const handleLogout = () => {
     setTimeout(() => signOut(), 1000);
-    toast.success("Logout successful!");
+    toast.success(t('navigation.logout') + " successful!");
   }
   return (
     <div className="h-10 text-white bg-blue-500 max-lg:px-5 max-lg:h-16 max-[573px]:px-0">
@@ -31,26 +35,30 @@ const HeaderTop = () => {
         <ul className="flex items-center h-full gap-x-5 max-[370px]:text-sm max-[370px]:gap-x-2">
           <li className="flex items-center gap-x-2 font-semibold">
             <FaHeadphones className="text-white" />
-            <span>+381 61 123 321</span>
+            <span>{t('common.phone')}</span>
           </li>
           <li className="flex items-center gap-x-2 font-semibold">
             <FaRegEnvelope className="text-white text-xl" />
-            <span>test@email.com</span>
+            <span>{t('common.email')}</span>
           </li>
         </ul>
         <ul className="flex items-center gap-x-5 h-full max-[370px]:text-sm max-[370px]:gap-x-2 font-semibold">
+          <li className="flex items-center">
+            <FaLanguage className="text-white mr-1" />
+            <LanguageSwitcher />
+          </li>
           {!session ? ( 
           <>
           <li className="flex items-center">
             <Link href="/login" className="flex items-center gap-x-2 font-semibold">
               <FaRegUser className="text-white" />
-              <span>Login</span>
+              <span>{t('navigation.login')}</span>
             </Link>
           </li>
           <li className="flex items-center">
             <Link href="/register" className="flex items-center gap-x-2 font-semibold">
               <FaRegUser className="text-white" />
-              <span>Register</span>
+              <span>{t('navigation.register')}</span>
             </Link>
           </li>
           </>
@@ -59,7 +67,7 @@ const HeaderTop = () => {
           <li className="flex items-center">
             <button onClick={() => handleLogout()} className="flex items-center gap-x-2 font-semibold">
               <FaRegUser className="text-white" />
-              <span>Log out</span>
+              <span>{t('navigation.logout')}</span>
             </button>
           </li>
           </>)}

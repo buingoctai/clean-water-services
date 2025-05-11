@@ -6,6 +6,7 @@ import SessionProvider from "@/utils/SessionProvider";
 import Providers from "@/Providers";
 import { getServerSession } from "next-auth";
 import 'svgmap/dist/svgMap.min.css';
+import { LanguageProvider } from "./i18n/LanguageContext";
 
 
 
@@ -28,11 +29,13 @@ export default async function RootLayout({
     <html lang="en" data-theme="light">
       <body className={inter.className}>
       <SessionProvider session={session}>
-        <Header />
-        <Providers>
-        {children}
-        </Providers>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <Providers>
+          {children}
+          </Providers>
+          <Footer />
+        </LanguageProvider>
       </SessionProvider>
         </body>
     </html>
